@@ -18,3 +18,5 @@ npm-debug.log
 # Logs
 logs
 *.log
+
+*.sass-cache
