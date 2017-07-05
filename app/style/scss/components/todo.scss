@@ -1,0 +1,31 @@
+.places-list {
+  text-align: center;
+  max-width: $max-width;
+  margin: 0px auto; 
+  h2 {
+    margin-bottom: em(42px, 32px);
+  }
+  .place {
+    @include clearfix;
+    float:left;
+    margin-bottom: em(50px, 32px);
+    width: 100%;
+    height: em(400px, 32px);
+    background-color: #d1d1d1;
+    h3 {
+      margin-bottom: em(30px, 32px);
+      font-size: em(42px, 32px);
+
+    }
+    p {
+      margin: 0px auto 20px;
+      width:80%;
+    }
+    a {
+      margin-bottom: em(30px, 32px);
+    }
+  @include bp(sm) {
+    width:50%;
+    }
+  }
+}
