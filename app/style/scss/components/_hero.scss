@@ -1,6 +1,22 @@
 .hero {
-  background: url('https://unsplash.com/photos/PAykYb-8Er8') no-repeat center center fixed;
-  height: 400px;
+  background: linear-gradient(
+                     rgba(20,20,20, .4),
+                     rgba(20,20,20, .2)),
+                     url('/app/images/green-hero.jpg') no-repeat center center fixed;
+  height: 300px;
+  position: relative;
   width:100%;
   text-align: center;
+  border-bottom: 20px solid $shocker;
+  h1 {
+  color: $neutral-color-4;
+  padding-top: em(60px, 32px);
+  }
+  p {
+    color: $neutral-color-4;
+    font-weight: 300;
+    margin-top: em(16px, 32px);
+    letter-spacing: .25em;
+    text-transform: lowercase;
+  }
 }

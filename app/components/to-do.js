@@ -10,8 +10,8 @@ class ToDo extends React.Component {
 
   render () {
     return (
-      <div className="places-list">
-         <h2>Things to do during your visit</h2>
+      <div className="places-list" id="todo">
+         <h2>Stay Busy</h2>
         { this._getPlaces() }
        </div>
     );
@@ -24,14 +24,14 @@ class ToDo extends React.Component {
         id: 0,
         image: '/',
         name: 'City Museum',
-        description: 'Make sure you have at least a few hours to spend exploring this ecclectic spot. City Museum is a favorite destination of both brides - from the meticulous murals to the eerie caves. Make sure to check out the roof!',
+        description: "City Museum is a favorite destination of both brides - from the meticulous murals to the eerie caves. Don't miss the roof!",
         link: 'http://www.citymuseum.org/'
       },
       {
         id: 1,
         image: '/',
         name: 'Gateway Arch',
-        description: 'Towering at 630 feet, the St. Louis Gateway Arch is 2.5 times taller than the Statue of Liberty. See where it all began for Lewis and Clark, even if you opt out of the ride to the top.',
+        description: 'Towering at 630 feet, the Arch is 2.5x taller than the Statue of Liberty. See where it all began for Lewis and Clark, even if you opt out of the ride to the top.',
         link: 'http://www.gatewayarch.com/'
       },
       {
@@ -83,7 +83,7 @@ class ToDo extends React.Component {
 
       },
       {
-        id: 7,
+        id: 8,
         image: '/',
         name: 'The Grove',
         description: 'Vibrant LGBTQ neighborhood featuring yummy eats, cute shops and exciting nightlife. Spots to hit: Just John, Handlebar, Attitudes.',
@@ -91,15 +91,15 @@ class ToDo extends React.Component {
 
       },
       {
-        id: 8,
+        id: 9,
         image: '/',
         name: 'Contemporary Art Museum',
-        description: "Its bizarre, imaginitive and ludacris rotation of exhibits makes CAM an intriguing destination.",
+        description: "CAM's bizarre, imaginitive and ludacris rotation of exhibits makes it an intriguing destination.",
         link: 'http://camstl.org/'
 
       },
       {
-        id: 9,
+        id: 10,
         image: '/',
         name: 'Delmar Loop',
         description: "Pin-Up Bowl, Vintage Vinyl, The Trolley (if it's working)... with the right attitude, The Loop is a lot of fun.",
@@ -107,7 +107,7 @@ class ToDo extends React.Component {
 
       },
       {
-        id: 10,
+        id: 11,
         image: '/',
         name: 'Cherokee Street',
         description: 'Antique Row for shoppin, Taqueria El Bronco for grub, Fortune Teller Bar for cocktails, Hop Shop and Earthbound for good beer. Take your pick on this fun stretch of diverse shops.',
@@ -115,7 +115,7 @@ class ToDo extends React.Component {
 
       },
       {
-        id: 11,
+        id: 12,
         image: '/',
         name: 'Anheuser-Busch Brewery',
         description: "While you are here, might as well tour one of the country's oldest and largest breweries. The free beer at the end is worth its weight in gold.",

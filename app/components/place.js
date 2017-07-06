@@ -5,9 +5,11 @@ class Place extends React.Component {
   render() {
     return(
       <div className="place">
-        <h3 className="name">{ this.props.name }</h3>
-        <p className='description'>{ this.props.description } </p>
-        <a href={this.props.link}> Visit the site </a>
+        <div className="block">
+          <h3 className="name">{ this.props.name }</h3>
+          <p className='description'>{ this.props.description } </p>
+          <a href={this.props.link} target="_blank">Visit the site</a>
+        </div>
       </div>
     );
   }

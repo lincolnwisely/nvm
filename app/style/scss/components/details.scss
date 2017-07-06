@@ -1,0 +1,19 @@
+.details {
+  text-align: center;
+  margin-top: em(64px, 32px);
+  p {
+    width: 95%;
+    @include bp(sm) {
+      width: 90%;
+      margin:0px auto;
+     }
+  }
+  ul {
+    font-family: $secondary-font;
+    padding: 0;
+
+    li {
+      list-style: none;
+    }
+  }
+}
