@@ -4,8 +4,9 @@ nav {
   ul {
     display: flex;
     font-family: $secondary-font;
-    justify-content: space-around;
     flex-direction: column;
+    justify-content: space-around;
+    letter-spacing: 2px;
     margin:0px auto;
     padding: 0;
     text-transform: uppercase;
@@ -14,19 +15,16 @@ nav {
     flex-direction: row;
     }
     li {
+      border-bottom: 2px solid $neutral-color-3;
       display: inline-block;
-      // flex-grow: 1;
       margin: 20px auto 0px ;
       text-align: center;
-      border-bottom: 2px solid $neutral-color-3;
       width: 120px;
       &:hover {
         color: $shocker;
         // color: $neutral-color-4;
         @include transition(color .2s ease);
         border-bottom: 2px solid $shocker;
-        // @include transition(background-color 1s .5s, color 2s);
-        // transition: background-color .3s color .3s;
       }
       @include bp(sm) {
       width: auto;

@@ -1,0 +1,11 @@
+.image-feed {
+  max-width: $max-width;
+  margin: 0 auto;
+  @include clearfix;
+
+  img {
+    @include clearfix;
+
+    max-width: 300px;
+  }
+}

@@ -7,3 +7,23 @@ body {
   color: $neutral-color-1;
   margin: 0;
 }
+
+
+
+.col-xs-12 {
+  width:100%;
+  display:inline-block;
+  text-align: center;
+}
+.col-sm-6 {
+  @include bp(md) {
+  width: 50%;
+
+}
+}
+.col-md-4.col-lg-3 {
+  @include bp(lg) {
+  width: 33.3%;
+
+}
+}

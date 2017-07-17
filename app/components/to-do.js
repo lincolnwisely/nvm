@@ -24,7 +24,7 @@ class ToDo extends React.Component {
         id: 0,
         image: '/',
         name: 'City Museum',
-        description: "City Museum is a favorite destination of both brides - from the meticulous murals to the eerie caves. Don't miss the roof!",
+        description: "City Museum is a favorite destination of both brides - from the meticulous murals to the eerie caves. Insider's tip: rooftop access is worth the extra $.",
         link: 'http://www.citymuseum.org/'
       },
       {
@@ -78,7 +78,7 @@ class ToDo extends React.Component {
         id: 7,
         image: '/',
         name: 'Central West End',
-        description: "This trendy and walkable neighborhood has great restaurants and bars. Probably the most 'New York' part of STL.",
+        description: "This trendy and walkable neighborhood has great restaurants and bars. Probably the most 'New York' part of STL. Reccos: Mission Taco for dinner, Brasserie for brunch, Taste for cocktails.",
         link: 'https://cwescene.com/'
 
       },
@@ -86,7 +86,7 @@ class ToDo extends React.Component {
         id: 8,
         image: '/',
         name: 'The Grove',
-        description: 'Vibrant LGBTQ neighborhood featuring yummy eats, cute shops and exciting nightlife. Spots to hit: Just John, Handlebar, Attitudes.',
+        description: 'LGBTQ-friendly neighborhood featuring yummy eats, cute shops and vibrant nightlife. Spots to hit: Just John, Handlebar, Attitudes.',
         link: 'http://thegrovestl.com/contact/'
 
       },
@@ -94,7 +94,7 @@ class ToDo extends React.Component {
         id: 9,
         image: '/',
         name: 'Contemporary Art Museum',
-        description: "CAM's bizarre, imaginitive and ludacris rotation of exhibits makes it an intriguing destination.",
+        description: "CAM's bizarre, imaginitive and ludacris rotation of exhibits makes it an intriguing destination. Cool spots nearby: The Fountain on Locust, Urban Chestnut.",
         link: 'http://camstl.org/'
 
       },
@@ -102,7 +102,7 @@ class ToDo extends React.Component {
         id: 10,
         image: '/',
         name: 'Delmar Loop',
-        description: "Pin-Up Bowl, Vintage Vinyl, The Trolley (if it's working)... with the right attitude, The Loop is a lot of fun.",
+        description: "Pin-Up Bowl, Vintage Vinyl, The Trolley (if it's working)... with the right attitude, The Loop is a lot of fun. ",
         link: 'https://visittheloop.com/'
 
       },
