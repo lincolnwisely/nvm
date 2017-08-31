@@ -13,7 +13,7 @@ class App extends React.Component {
 
   render()  {
     return(
-      <div className="container">
+      <div className="wrapper">
         <div className="hero">
           <h1>Webber-Wisely</h1>
           <p>---- March 30th, 2018 ----</p>

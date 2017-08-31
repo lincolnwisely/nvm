@@ -98,16 +98,16 @@ class ToDo extends React.Component {
         link: 'http://camstl.org/'
 
       },
+      // {
+      //   id: 10,
+      //   image: '/',
+      //   name: 'Delmar Loop',
+      //   description: "Pin-Up Bowl, Vintage Vinyl, The Trolley (if it's working)... with the right attitude, The Loop is a lot of fun. ",
+      //   link: 'https://visittheloop.com/'
+      //
+      // },
       {
         id: 10,
-        image: '/',
-        name: 'Delmar Loop',
-        description: "Pin-Up Bowl, Vintage Vinyl, The Trolley (if it's working)... with the right attitude, The Loop is a lot of fun. ",
-        link: 'https://visittheloop.com/'
-
-      },
-      {
-        id: 11,
         image: '/',
         name: 'Cherokee Street',
         description: 'Antique Row for shoppin, Taqueria El Bronco for grub, Fortune Teller Bar for cocktails, Hop Shop and Earthbound for good beer. Take your pick on this fun stretch of diverse shops.',
@@ -115,7 +115,7 @@ class ToDo extends React.Component {
 
       },
       {
-        id: 12,
+        id: 11,
         image: '/',
         name: 'Anheuser-Busch Brewery',
         description: "While you are here, might as well tour one of the country's oldest and largest breweries. The free beer at the end is worth its weight in gold.",

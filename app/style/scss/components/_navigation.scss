@@ -1,4 +1,6 @@
 nav {
+  position: absolute;
+  top: 0;
   width: 100%;
   margin-top: em(42px, 32px);
   ul {
@@ -15,10 +17,12 @@ nav {
     flex-direction: row;
     }
     li {
-      border-bottom: 2px solid $neutral-color-3;
+      // border-bottom: 2px solid $neutral-color-3;
+      color: $white;
       display: inline-block;
       margin: 20px auto 0px ;
       text-align: center;
+      text-shadow:$text-shadow;
       width: 120px;
       &:hover {
         color: $shocker;

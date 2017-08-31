@@ -31,7 +31,7 @@ class Form extends React.Component {
             <InputGroup id={ 'email' } type={ 'text' } title={ 'Email' }/>
             <InputGroup id={ 'name' } type={ 'radio' } title={ 'Accept with pleasure' }/>
             <InputGroup id={ 'name' } type={ 'radio' } title={ 'Respectfully decline' }/>
-
+    
             {/* <input type='radio'  value='Accept with pleasure' checked={ true } />
             <input type='radio'  value='Respectfully decline' /> */}
 

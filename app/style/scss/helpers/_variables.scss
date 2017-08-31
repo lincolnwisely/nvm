@@ -2,7 +2,7 @@
 $primary-font-regular: 'Playfair Display', serif;
 $secondary-font: 'Didact Gothic', sans-serif;
 
-
+$white: #ffffff;
 $neutral-color-0: #000000;
 $neutral-color-1: #555964;
 $neutral-color-2: #d1d1d1;
@@ -11,6 +11,7 @@ $neutral-color-4: #ffffff;
 $neutral-color-5: #31453c;
 
 $primary-color: #e61e27;
+$soft: #d5bdd8;
 $shocker: #bd3aff;
 
 $header-height-m: 54px;
@@ -23,3 +24,5 @@ $inactive-opacity: 0.4;
 
 /// Container's maximum width
 $max-width: 1180px !default;
+
+$text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);

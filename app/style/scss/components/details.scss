@@ -1,15 +1,22 @@
 .details {
   text-align: center;
-  margin-top: em(64px, 32px);
+  background-color: $soft;
+  // margin-top: em(64px, 32px);
+  h2 {
+  color: $white;
+  font-family: $secondary-font;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  }
   p {
     width: 95%;
     margin: 0 auto;
-    @include bp(sm) {
-      width: 70%;
-     }
-     @include bp(md) {
-       width: 60%;
-      }
+    // @include bp(sm) {
+    //   width: 70%;
+    //  }
+    //  @include bp(md) {
+    //    width: 60%;
+    //   }
   }
   ul {
     font-family: $secondary-font;

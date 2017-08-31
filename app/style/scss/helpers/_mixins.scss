@@ -5,14 +5,11 @@
     clear: both;
   }
 }
-
-
 @mixin optional-at-root($sel) {
   @at-root #{if(not &, $sel, selector-append(&, $sel))} {
     @content;
   }
 }
-
 @mixin placeholder {
   @include optional-at-root('::-webkit-input-placeholder') {
     @content;
@@ -46,7 +43,6 @@
   -o-transform: $transforms;
   transform: $transforms;
 }
-
 
 /// Declare Responsive Breakpoints
 /// @author Kohl of Manifest
