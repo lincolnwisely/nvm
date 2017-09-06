@@ -1,16 +1,20 @@
 .details {
-  text-align: center;
   background-color: $soft;
-  // margin-top: em(64px, 32px);
+
   h2 {
   color: $white;
   font-family: $secondary-font;
   letter-spacing: 0.1rem;
+  text-align: center;
   text-transform: uppercase;
+  width: 90%;
+  margin: 0 auto;
   }
+
   p {
-    width: 95%;
-    margin: 0 auto;
+  text-align: left;
+  width: 90%;
+  margin: 0 auto;
     // @include bp(sm) {
     //   width: 70%;
     //  }

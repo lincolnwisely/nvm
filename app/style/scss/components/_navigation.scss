@@ -1,8 +1,15 @@
 nav {
-  position: absolute;
-  top: 0;
   width: 100%;
-  margin-top: em(42px, 32px);
+  padding-bottom: em(40px, 32px);
+  display: block;
+  background-color: #3d4255;
+
+  @include bp(sm) {
+    position:absolute;
+    top: 0;
+    background-color: transparent;
+    z-index: 1;
+  }
   ul {
     display: flex;
     font-family: $secondary-font;
@@ -13,23 +20,37 @@ nav {
     padding: 0;
     text-transform: uppercase;
     width: 80%;
+
     @include bp(sm) {
     flex-direction: row;
     }
+
     li {
-      // border-bottom: 2px solid $neutral-color-3;
+      border: 1px solid transparent;
       color: $white;
       display: inline-block;
-      margin: 20px auto 0px ;
+      margin: 20px auto 0px;
+      padding: 5px;
       text-align: center;
       text-shadow:$text-shadow;
       width: 120px;
+
       &:hover {
-        color: $shocker;
-        // color: $neutral-color-4;
-        @include transition(color .2s ease);
-        border-bottom: 2px solid $shocker;
+        background-color: $dark-purple;
+        color: $green;
+        @include transition(all .6s ease);
+        border: 1px solid $neutral-color-4;
+
+        // &:before {
+        //   content: '–';
+        //
+        // }
+        // &:after {
+        //   content: '–';
+        //
+        // }
       }
+
       @include bp(sm) {
       width: auto;
 

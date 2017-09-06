@@ -14,12 +14,13 @@ class App extends React.Component {
   render()  {
     return(
       <div className="wrapper">
+        <Navigation />
         <div className="hero">
           <h1>Webber-Wisely</h1>
           <p>---- March 30th, 2018 ----</p>
         </div>
-        <Navigation />
         <Details />
+        <h3>R.S.V.P</h3>
         <Form />
         {/* <RSVP /> */}
         <ToDo />
