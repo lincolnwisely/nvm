@@ -1,8 +1,96 @@
 .rsvp {
   background-color: #fff;
+  text-align: center;
 }
 
+.form-container {
+  width: 100%;
+  max-width: 35.625em;
+  margin: 0 auto;
+  padding-top: em(40px, 32px);
+  margin-top: em(140px, 32px);
 
-#thanks {
-  display:none;
+  h2 {
+    text-align: center;
+  }
+
+  form {
+    margin: 0 auto;
+    padding: em(80px, 32px);
+
+    label {
+      cursor: pointer;
+      margin-bottom: em(40px, 32px);
+      display: inline-block;
+
+      &:first-of-type,
+      &:last-of-type {
+        width: 100%;
+      }
+
+    }
+
+    input {
+      &[type="text"] {
+        height: em(80px, 32px);
+        width: 100%;
+        margin: 0;
+        border: none;
+        border-bottom: 1px solid;
+        background-color: transparent;
+
+        @include bp(sm) {
+        }
+      }
+
+      &[type="radio"] {
+        margin: 0 30px 0 10px;
+      }
+
+      &[type="checkbox"] {
+        margin-right: 10px;
+        // display: none;
+        //
+        // &+ label:before {
+        //   border: 1px solid #333;
+        //   content: "\00a0";
+        //   display: inline-block;
+        //   font: 16px/1em sans-serif;
+        //   height: 16px;
+        //   margin: 0 .25em 0 0;
+        //   padding: 0;
+        //   vertical-align: top;
+        //   width: 16px;
+        // }
+        //
+        // &:checked + label:before {
+        //   background: #fff;
+        //   color: #333;
+        //   content: "x";
+        //   text-align: center;
+        // }
+
+      }
+
+      &[type="submit"] {
+        background-color: #bd85e4;
+        border: none;
+        border-radius: 1px;
+        display: block;
+        margin: 0 auto;
+        padding: em(12px, 32px);
+        width: em(400px, 32px);
+        -webkit-appearance: button;
+      }
+    }
+
+    select {
+      margin-left: em(40px, 32px);
+    }
+  }
+
+
+  #thanks {
+    display:none;
+  }
 }

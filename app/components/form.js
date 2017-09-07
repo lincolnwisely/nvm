@@ -80,32 +80,54 @@ class Reservation extends React.Component {
 
   handleRadioChange(event) {
     this.setState({isGoing: event.target.value});
-    console.log(event.target.value);
   }
 
   handleSubmit(event) {
     event.preventDefault();
+
+    // const data = new FormData(this.state); // doesn't work...
+//this.state will return an object of the form's state - e.g. data.
+// need to send this object to a URL
+
     alert('A name has been submitted: ' + this.state.fullName +"AND Is going: " + this.state.isGoing + " AND total guests:" + this.state.numberOfGuests + "AND wants fb invite?: " + this.state.facebookEvent);
-    var form = document.getElementById("form");
-    var thanks = document.getElementById("thanks");
-    console.log(form);
-    form.reset();
+    let form = document.getElementById("gform");
+    // const data = {};
+    // const url = 'https://docs.google.com/spreadsheets/d/1uLsm7hRUb2ZAR8DoiBNz4UbnXoJlg7lS1WftXC1E2hQ/edit#gid=0';
+    const thanks = document.getElementById("thanks");
+// serializeObject() is not a function
+    console.log(this.state);
+    console.log(form + ' form');
+    // console.log(data + ' data');
+
     form.style.display = 'none';
     thanks.style.display = 'block';
 
+//new url https://script.google.com/macros/s/AKfycbxam9lV6hXiRU84F8DxILj3mJ0qgFs8gpkuGSPjwnDoFsD0hS4/exec
+
+
+    // var url = 'https://script.google.com/macros/s/AKfycbx8ZWCyYjZnz8Ic0FzXXs0BMknchW0L3hwMinWPNIvOiaJLww/exec';
+    //
+    // var jqxhr = $.ajax({
+    //     url: url,
+    //     method: "GET",
+    //     dataType: "json",
+    //     data: form.serializeObject()
+    //   }).success(
+    //     // do something
+    //   );
   }
 
   render() {
     return(
-      <form onSubmit={ this.handleSubmit } id="form">
+      <form onSubmit={ this.handleSubmit } id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbxam9lV6hXiRU84F8DxILj3mJ0qgFs8gpkuGSPjwnDoFsD0hS4/exec">
         <label>
-          First & Last Name(s):
           <input
             required
             name="fullName"
             type="text"
             value={ this.state.fullName }
             onChange={ this.handleInputChange }
+            placeholder="First & Last Name"
           />
         </label>
         <br />
@@ -144,23 +166,24 @@ class Reservation extends React.Component {
             </select>
         </label>
         <br />
+        <input
+          name="facebookEvent"
+          type="checkbox"
+          checked={ this.state.facebookEvent }
+          onChange={ this.handleInputChange }
+        />
         <label>
           Sure, send a private Facebook invitation!
-          <input
-            name="facebookEvent"
-            type="checkbox"
-            checked={ this.state.facebookEvent }
-            onChange={ this.handleInputChange }
-          />
         </label>
         <br/>
         <label>
-          Include a note (optional):
           <input
             name="note"
             type="text"
             value={ this.state.note }
             onChange={ this.handleInputChange }
+            placeholder="Include a note (optional)"
+
           />
         </label>
         <br />
@@ -183,26 +206,15 @@ class Thanks extends React.Component {
 class Form extends React.Component {
   render() {
     return(
-        <div>
-          <Reservation />
-          <Thanks />
-        </div>
-      // <form className='rsvp'>
-      //   <fieldset>
-      //     <legend>R.S.V.P.</legend>
-      //       <InputGroup id={ 'name' } type={ 'text' } title={ 'Name' }/>
-      //       <InputGroup id={ 'email' } type={ 'text' } title={ 'Email' }/>
-      //       <InputGroup id={ 'name' } type={ 'radio' } title={ 'Accept with pleasure' }/>
-      //       <InputGroup id={ 'name' } type={ 'radio' } title={ 'Respectfully decline' }/>
-      //
-      //       {/* <input type='radio'  value='Accept with pleasure' checked={ true } />
-      //       <input type='radio'  value='Respectfully decline' /> */}
-      //
-      //
-      //   </fieldset>
-      // </form>
+      <div className="form-container">
+        <h2>R.S.V.P</h2>
+        <Reservation />
+        <Thanks />
+      </div>
     );
   }
 }
+
+
 
 export default Form;
