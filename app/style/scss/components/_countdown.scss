@@ -1,0 +1,16 @@
+.countdown {
+  height: 400px;
+  text-align: center;
+  position: relative;
+
+  h2 {
+    color: $gold;
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateY(-50%);
+  }
+}

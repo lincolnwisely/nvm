@@ -3,7 +3,7 @@ import Navigation from './navigation.js';
 import Details from './details.js';
 // import RSVP from './rsvp.js';
 import Form from './form.js';
-
+import Countdown from './countdown.js';
 import ToDo from './to-do.js';
 import Insta from './insta.js';
 import Footer from './footer.js';
@@ -20,11 +20,9 @@ class App extends React.Component {
           <p>---- March 30th, 2018 ----</p>
         </div>
         <Details />
-        <h3>R.S.V.P</h3>
         <Form />
-        {/* <RSVP /> */}
+        <Countdown />
         <ToDo />
-
         <Insta />
         <Footer />
 
