@@ -19,7 +19,8 @@ nav {
     margin:0px auto;
     padding: 0;
     text-transform: uppercase;
-    width: 80%;
+    width: 100%;
+    max-width: 1180px;
 
     @include bp(sm) {
     flex-direction: row;
@@ -37,7 +38,7 @@ nav {
 
       &:hover {
         background-color: $dark-purple;
-        color: $green;
+        color: $gold;
         @include transition(all .6s ease);
         border: 1px solid $neutral-color-4;
 
