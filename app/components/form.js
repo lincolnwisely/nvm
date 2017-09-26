@@ -173,7 +173,7 @@ class Reservation extends React.Component {
           onChange={ this.handleInputChange }
         />
         <label>
-          Sure, send a private Facebook invitation!
+          Send a private Facebook invitation!
         </label>
         <br/>
         <label>
@@ -206,7 +206,7 @@ class Thanks extends React.Component {
 class Form extends React.Component {
   render() {
     return(
-      <div className="form-container">
+      <div className="form-container" id="rsvp">
         <h2>R.S.V.P</h2>
         <Reservation />
         <Thanks />

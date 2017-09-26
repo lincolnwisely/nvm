@@ -37,7 +37,7 @@ class RSVP extends React.Component {
 
 
     return (
-      <div className="rsvp">
+      <div className="rsvp" id="rsvp">
         <h2>R.S.V.P.</h2>
         { rsvpYes }
       </div>

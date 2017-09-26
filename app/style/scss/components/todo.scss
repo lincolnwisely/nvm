@@ -5,21 +5,20 @@
   @include clearfix;
 
   h2 {
-    color: $neutral-color-5;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: em(42px, 32px);
+    margin-bottom: rem(42px, 16px);
     width: 95%;
     @include bp(sm) {
       width:90%;
-      margin-bottom: em(42px, 32px);
+      margin-bottom: em(21px, 16px);
       }
     }
   .place {
     @include clearfix;
     float:left;
     width: 100%;
-    height: em(450px, 32px);
+    height: rem(450px, 32px);
     .block {
       background-color: $neutral-color-4;
       border: 1px solid $neutral-color-3;
@@ -28,8 +27,8 @@
       position: relative;
       width: 90%;
       h3 {
-        margin-top: em(30px, 32px);
-        font-size: em(42px, 32px);
+        margin-top: rem(15px, 16px);
+        font-size: rem(21px, 16px);
       }
       p {
         background-color: $neutral-color-4;

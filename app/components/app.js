@@ -1,5 +1,6 @@
 import React from 'react';
 import Navigation from './navigation.js';
+import Welcome from './welcome.js';
 import Details from './details.js';
 // import RSVP from './rsvp.js';
 import Form from './form.js';
@@ -19,6 +20,7 @@ class App extends React.Component {
           <h1>Webber-Wisely</h1>
           <p>---- March 30th, 2018 ----</p>
         </div>
+        <Welcome />
         <Details />
         <Form />
         <Countdown />

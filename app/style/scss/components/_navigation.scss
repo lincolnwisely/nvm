@@ -1,6 +1,6 @@
 nav {
   width: 100%;
-  padding-bottom: em(40px, 32px);
+  padding-bottom: rem(40px, 16px);
   display: block;
   background-color: #3d4255;
 
@@ -36,25 +36,24 @@ nav {
       text-shadow:$text-shadow;
       width: 120px;
 
-      &:hover {
-        background-color: $dark-purple;
-        color: $gold;
-        @include transition(all .6s ease);
-        border: 1px solid $neutral-color-4;
-
-        // &:before {
-        //   content: '–';
-        //
-        // }
-        // &:after {
-        //   content: '–';
-        //
-        // }
-      }
-
       @include bp(sm) {
       width: auto;
 
+      }
+
+      &:hover {
+        background-color: $dark-purple;
+        @include transition(all .6s ease);
+        border: 1px solid $neutral-color-4;
+
+        a {
+          color: $gold;
+        }
+      }
+
+      a {
+        color: $white;
+        text-decoration: none;
       }
     }
 

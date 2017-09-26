@@ -1,10 +1,11 @@
 .countdown {
+  background-color: $gold;
   height: 400px;
   text-align: center;
   position: relative;
 
   h2 {
-    color: $gold;
+    color: $white;
     display: block;
     width: 100%;
     max-width: 500px;

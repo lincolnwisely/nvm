@@ -2,25 +2,23 @@
   background-color: $soft;
 
   h2 {
-  color: $white;
-  font-family: $secondary-font;
+  color: $dark-purple;
   letter-spacing: 0.1rem;
   text-align: center;
   text-transform: uppercase;
   width: 90%;
-  margin: 0 auto;
+  }
+
+  h3 {
+    color: $dark-purple;
+    width: 90%;
+    margin: 0 auto;
   }
 
   p {
   text-align: left;
   width: 90%;
-  margin: 0 auto;
-    // @include bp(sm) {
-    //   width: 70%;
-    //  }
-    //  @include bp(md) {
-    //    width: 60%;
-    //   }
+  margin: 0 auto rem(30px, 16px);
   }
   ul {
     font-family: $secondary-font;

@@ -53,7 +53,7 @@ class ToDo extends React.Component {
         id: 4,
         image: '/',
         name: 'St. Louis Art Museum',
-        description: 'St. Louis Art Museum is a treat. Free admission, fascinating art collections spanning centuries and lovely views of Art Hill and the Grand Basin (the exact location of our engagement, nbd).',
+        description: 'St. Louis Art Museum is a treat. Free admission, fascinating art collections spanning centuries and lovely views of the Grand Basin (exact location of our engagement, nbd).',
         link: 'http://www.slam.org/'
 
       },
@@ -78,7 +78,7 @@ class ToDo extends React.Component {
         id: 7,
         image: '/',
         name: 'Central West End',
-        description: "This trendy and walkable neighborhood has great restaurants and bars. Probably the most 'New York' part of STL. Reccos: Mission Taco for dinner, Brasserie for brunch, Taste for cocktails.",
+        description: "This trendy and walkable neighborhood has great restaurants and bars. Probably the most 'New York' part of STL. Reccos: Dressel's for dinner, Brasserie for brunch, Taste for cocktails.",
         link: 'https://cwescene.com/'
 
       },

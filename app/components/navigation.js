@@ -15,12 +15,12 @@ class Navigation extends React.Component {
     return(
       <nav>
         <ul>
-          <li>About Us</li>
-          <li>Event Details</li>
-          <li>R.S.V.P.</li>
-          <li>Stay Busy</li>
-          <li>Gallery</li>
-          <li>Registry</li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#details">Event Details</a></li>
+          <li><a href="#rsvp">R.S.V.P.</a></li>
+          <li><a href="#todo">Stay Busy</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#registry">Registry</a></li>
         </ul>
       </nav>
     );
