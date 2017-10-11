@@ -11,32 +11,77 @@ import React from 'react';
 // };
 
 class Navigation extends React.Component {
+
+  constructor(props, context) {
+    super(props, context);
+    this._getItems = this._getItems.bind(this);
+    // this.handleScroll = this.handleScroll.bind(this);
+  }
+
   render() {
     return(
       <nav>
         <ul>
-          <li><a href="#about">About Us</a></li>
+          { this._getItems() }
+          {/* <li><a href="#about">About Us</a></li>
           <li><a href="#details">Event Details</a></li>
           <li><a href="#rsvp">R.S.V.P.</a></li>
           <li><a href="#todo">Stay Busy</a></li>
           <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#registry">Registry</a></li>
+          <li><a href="#registry">Registry</a></li> */}
         </ul>
       </nav>
     );
   }
+
+
+  _getItems() {
+    let li = [
+      { id: 0,
+        herf: '#about',
+        title: 'About Us'
+      },
+      { id: 1,
+        herf: '#details',
+        title: 'Event Details'
+      },
+      { id: 2,
+        herf: '#rsvp',
+        title: 'R.S.V.P.'
+      },
+      { id: 3,
+        herf: '#todo',
+        title: 'Stay Busy'
+      },
+      { id: 4,
+        herf: '#lodging',
+        title: 'Lodging'
+      },
+      { id: 5,
+        herf: '#registry',
+        title: 'Registry'
+      }
+    ];
+
+    let mapItems = li.map(item => {
+      return (<li key={ item.id }> <a href={ item.href }>{ item.title }</a></li>
+        );
+      }
+    );
+    return mapItems;
+  }
 }
 
-// NavItem.propTypes = {
-//   className: PropTypes.string,
-//   onClick: PropTypes.func,
-//   to: PropTypes.string.isRequired,
-//   title: PropTypes.string.isRequired
-// }
+//   handleScroll(event) {
 //
-// NavItem.defaultProps = {
-//   className: '',
-//   onClick: null
-// }
+//   }
+//     handleScroll: function(event) {
+//       let scrollTop = event.srcElement.body.scrollTop,
+//           itemTranslate = Math.min(0, scrollTop/3 - 60);
+//
+//       this.setState({
+//         transform: itemTranslate
+//       });
+//   }
 
 export default Navigation;

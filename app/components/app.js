@@ -4,9 +4,10 @@ import Welcome from './welcome.js';
 import Details from './details.js';
 // import RSVP from './rsvp.js';
 import Form from './form.js';
-import Countdown from './countdown.js';
+
 import ToDo from './to-do.js';
-import Insta from './insta.js';
+import Registry from './registry.js';
+// import Insta from './insta.js';
 import Footer from './footer.js';
 import style from '../style/scss/style.scss';
 
@@ -15,17 +16,19 @@ class App extends React.Component {
   render()  {
     return(
       <div className="wrapper">
-        <Navigation />
         <div className="hero">
           <h1>Webber-Wisely</h1>
           <p>---- March 30th, 2018 ----</p>
         </div>
+        <Navigation onScroll={this.handleScroll} />
         <Welcome />
         <Details />
         <Form />
-        <Countdown />
+        {/* <RSVP /> */}
         <ToDo />
-        <Insta />
+
+        {/* <Insta /> */}
+        <Registry />
         <Footer />
 
 

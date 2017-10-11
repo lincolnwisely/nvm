@@ -53,7 +53,7 @@ class ToDo extends React.Component {
         id: 4,
         image: '/',
         name: 'St. Louis Art Museum',
-        description: 'St. Louis Art Museum is a treat. Free admission, fascinating art collections spanning centuries and lovely views of the Grand Basin (exact location of our engagement, nbd).',
+        description: 'St. Louis Art Museum is a treat. Free admission, fascinating art collections spanning centuries and lovely views of Art Hill and the Grand Basin (the exact location of our engagement, nbd).',
         link: 'http://www.slam.org/'
 
       },
@@ -78,7 +78,7 @@ class ToDo extends React.Component {
         id: 7,
         image: '/',
         name: 'Central West End',
-        description: "This trendy and walkable neighborhood has great restaurants and bars. Probably the most 'New York' part of STL. Reccos: Dressel's for dinner, Brasserie for brunch, Taste for cocktails.",
+        description: "This trendy and walkable neighborhood has great restaurants and bars. Probably the most 'New York' part of STL. Reccos: Mission Taco for dinner, Brasserie for brunch, Taste for cocktails.",
         link: 'https://cwescene.com/'
 
       },
@@ -98,24 +98,24 @@ class ToDo extends React.Component {
         link: 'http://camstl.org/'
 
       },
-      // {
-      //   id: 10,
-      //   image: '/',
-      //   name: 'Delmar Loop',
-      //   description: "Pin-Up Bowl, Vintage Vinyl, The Trolley (if it's working)... with the right attitude, The Loop is a lot of fun. ",
-      //   link: 'https://visittheloop.com/'
-      //
-      // },
       {
         id: 10,
         image: '/',
-        name: 'Cherokee Street',
-        description: 'Antique Row for shoppin, Taqueria El Bronco for grub, Fortune Teller Bar for cocktails, Hop Shop and Earthbound for good beer. Take your pick on this fun stretch of diverse shops.',
-        link: 'http://cherokeestreetnews.org/'
+        name: 'Delmar Loop',
+        description: "Pin-Up Bowl, Vintage Vinyl, The Trolley (if it's working)... with the right attitude, The Loop is a lot of fun. ",
+        link: 'https://visittheloop.com/'
 
       },
       {
         id: 11,
+        image: '/',
+        name: 'Cherokee Street',
+        description: 'Take your pick on this fun stretch of diverse shops: Antique Row for shoppin, Taqueria El Bronco for grub, Fortune Teller Bar for cocktails, Hop Shop and Earthbound for good beer.',
+        link: 'http://cherokeestreetnews.org/'
+
+      },
+      {
+        id: 12,
         image: '/',
         name: 'Anheuser-Busch Brewery',
         description: "While you are here, might as well tour one of the country's oldest and largest breweries. The free beer at the end is worth its weight in gold.",

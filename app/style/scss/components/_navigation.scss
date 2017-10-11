@@ -5,7 +5,7 @@ nav {
   background-color: #3d4255;
 
   @include bp(sm) {
-    position:absolute;
+    position:fixed;
     top: 0;
     background-color: transparent;
     z-index: 1;
@@ -44,16 +44,21 @@ nav {
       &:hover {
         background-color: $dark-purple;
         @include transition(all .6s ease);
-        border: 1px solid $neutral-color-4;
+        // border: 1px solid $neutral-color-4;
 
         a {
           color: $gold;
         }
       }
 
+
       a {
         color: $white;
         text-decoration: none;
+      }
+
+      .scroll {
+        background-color: $dark-purple;
       }
     }
 

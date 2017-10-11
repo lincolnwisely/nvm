@@ -19,7 +19,7 @@ class Details extends React.Component{
           <h3>Dress Code</h3>
           <p>Festive attire, party clothes, dressy-casual. Or whatever is your thing. We want our guests to wear what makes them feel great.</p>
           <h3>Children policy</h3>
-          <p>Children are not invited. Dogs absolutely are, but the venue says otherwise.</p>
+          <p>Children are not invited to this event. (Dogs absolutely are, but the venue says otherwise.) Please leave your cutie pies with the sitter.</p>
         </div>
       </div>
     );
