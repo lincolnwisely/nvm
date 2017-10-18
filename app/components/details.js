@@ -13,9 +13,9 @@ class Details extends React.Component{
           {/* <iframe className="directions" src="https://www.google.com/maps/d/u/1/embed?mid=1VGafrbPO2bgIFF00H4xmqRDWGBI" width="100%" height="400px"></iframe> */}
 
           <h3>Parking</h3>
-          <p>Third Degree has a private lot available with plenty of free parking, as well as a dedicated lot attendant. There is also a patio area for overflow (or if the dance floor gets too hot to handle). We encourage guests who plan on imbibing to catch an Uber or Lyft to the venue!</p>
+          <p>Third Degree has a private lot available with plenty of free parking, as well as a dedicated lot attendant. There is also a patio area for overflow (or if the dance floor gets too hot to handle). We encourage guests who plan on imbibing to catch an Uber or Lyft to the venue.</p>
           <h3>Food & Drink</h3>
-          <p>Guests will be served dinner immediately following our arrival. Come thirsty; beer, wine and soft drinks will be provided. A full cash bar is available.</p>
+          <p>Guests will be served dinner immediately following our arrival. Come thirsty; beer, wine and soft drinks will be provided.</p>
           <h3>Dress Code</h3>
           <p>Festive attire, party clothes, dressy-casual. Or whatever is your thing. We want our guests to wear what makes them feel great.</p>
           <h3>Children policy</h3>

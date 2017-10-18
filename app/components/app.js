@@ -4,7 +4,7 @@ import Welcome from './welcome.js';
 import Details from './details.js';
 // import RSVP from './rsvp.js';
 import Form from './form.js';
-
+import Lodging from './lodging.js';
 import ToDo from './to-do.js';
 import Registry from './registry.js';
 // import Insta from './insta.js';
@@ -24,7 +24,7 @@ class App extends React.Component {
         <Welcome />
         <Details />
         <Form />
-        {/* <RSVP /> */}
+        <Lodging />
         <ToDo />
 
         {/* <Insta /> */}

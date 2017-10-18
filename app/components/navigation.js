@@ -38,27 +38,27 @@ class Navigation extends React.Component {
   _getItems() {
     let li = [
       { id: 0,
-        herf: '#about',
+        href: '#about',
         title: 'About Us'
       },
       { id: 1,
-        herf: '#details',
+        href: '#details',
         title: 'Event Details'
       },
       { id: 2,
-        herf: '#rsvp',
+        href: '#rsvp',
         title: 'R.S.V.P.'
       },
       { id: 3,
-        herf: '#todo',
+        href: '#todo',
         title: 'Stay Busy'
       },
       { id: 4,
-        herf: '#lodging',
+        href: '#lodging',
         title: 'Lodging'
       },
       { id: 5,
-        herf: '#registry',
+        href: '#registry',
         title: 'Registry'
       }
     ];
