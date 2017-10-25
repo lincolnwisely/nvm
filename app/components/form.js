@@ -1,5 +1,4 @@
 import React from 'react';
-import axios from 'axios';
 
 
 class Reservation extends React.Component {
@@ -54,12 +53,12 @@ class Reservation extends React.Component {
 
   // from https://stvmlbrn.github.io/2017/04/07/submitting-form-data-with-react.html
   // get our form data out of state
-     const { fullName, isGoing, numberOfGuests, note } = this.state;
-
-     axios.post('/', { fullName, isGoing, numberOfGuests, note })
-       .then((result) => {
-         //access the results here....
-       });
+    //  const { fullName, isGoing, numberOfGuests, note } = this.state;
+     //
+    //  axios.post('/', { fullName, isGoing, numberOfGuests, note })
+    //    .then((result) => {
+      //    //access the results here....
+      //  });
 
 //new url https://script.google.com/macros/s/AKfycbxam9lV6hXiRU84F8DxILj3mJ0qgFs8gpkuGSPjwnDoFsD0hS4/exec
 
