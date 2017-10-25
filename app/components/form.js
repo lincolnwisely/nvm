@@ -1,56 +1,6 @@
 import React from 'react';
+import axios from 'axios';
 
-// let InputGroup = React.createClass({
-//   render: function() {
-//     return(
-//       <label htmlFor={ this.props.id }> { this.props.title }
-//         <input id={ this.props.id } name={ this.props.name } type={this.props.type }/>
-//       </label>
-//     );
-//   }
-// });
-
-// class InputGroup extends React.Component {
-//   render() {
-//     return(
-//       <label htmlFor={ this.props.id }> { this.props.title }
-//         <input id={ this.props.id } name={ this.props.name } type={ this.props.type } value={ this.state.value } />
-//       </label>
-//     );
-//   }
-// }
-
-// class NameForm extends React.Component {
-//   constructor(props) {
-//     super(props);
-//     this.state = {
-//       value: ''
-//     };
-//     this.handleChange = this.handleChange.bind(this);
-//     this.handleSubmit = this.handleSubmit.bind(this);
-//   }
-//
-//   handleChange(event) {
-//     this.setState({value: event.target.value});
-//   }
-//
-//   handleSubmit(event) {
-//     alert('A name has been submitted: ' + this.state.value);
-//     event.preventDefault();
-//   }
-//
-//   render() {
-//     return(
-//       <form onSubmit={ this.handleSubmit }>
-//         <label>
-//           First & Last Name(s):
-//           <input type="text" value={ this.state.value } onChange={ this.handleChange } />
-//         </label>
-//         <input type="submit" value="Submit" />
-//       </form>
-//     );
-//   }
-// }
 
 class Reservation extends React.Component {
   constructor(props) {
@@ -101,6 +51,15 @@ class Reservation extends React.Component {
 
     form.style.display = 'none';
     thanks.style.display = 'block';
+
+  // from https://stvmlbrn.github.io/2017/04/07/submitting-form-data-with-react.html
+  // get our form data out of state
+     const { fullName, isGoing, numberOfGuests, note } = this.state;
+
+     axios.post('/', { fullName, isGoing, numberOfGuests, note })
+       .then((result) => {
+         //access the results here....
+       });
 
 //new url https://script.google.com/macros/s/AKfycbxam9lV6hXiRU84F8DxILj3mJ0qgFs8gpkuGSPjwnDoFsD0hS4/exec
 

@@ -15,24 +15,26 @@ class App extends React.Component {
 
   render()  {
     return(
-      <div className="wrapper">
-        <div className="hero">
-          <h1>Webber-Wisely</h1>
-          <p>---- March 30th, 2018 ----</p>
+      // <div id="outer-container">
+        <div className="wrapper">
+          <div className="hero">
+            <h1>Webber-Wisely</h1>
+            <p>---- March 30th, 2018 ----</p>
+          </div>
+          <Navigation pageWrapId={ "page-wrap" } className="test" />
+          <Welcome />
+          <Details />
+          <Form />
+          <Lodging />
+          <ToDo />
+
+          {/* <Insta /> */}
+          <Registry />
+          <Footer />
+
+
         </div>
-        <Navigation onScroll={this.handleScroll} />
-        <Welcome />
-        <Details />
-        <Form />
-        <Lodging />
-        <ToDo />
-
-        {/* <Insta /> */}
-        <Registry />
-        <Footer />
-
-
-      </div>
+      // </div>
     );
   }
 }

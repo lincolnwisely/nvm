@@ -9,7 +9,7 @@ class Place extends React.Component {
         <div className="block">
           <h3 className="name">{ this.props.name }</h3>
           <p className='description'>{ this.props.description } </p>
-          <a href={this.props.link} target="_blank">Visit the site</a>
+          <a href={this.props.link} target="_blank">{ this.props.cta }</a>
         </div>
       </div>
     );

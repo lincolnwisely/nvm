@@ -16,10 +16,7 @@
   form {
     margin: 0 auto;
     padding: rem(16px, 16px);
-    //
-    // @include bp(sm) {
-    //   padding: rem(16px, 16px);
-    // }
+    font-family: $secondary-font;
 
     label {
       cursor: pointer;
@@ -76,7 +73,7 @@
       }
 
       &[type="submit"] {
-        background-color: #bd85e4;
+        background-color: $dark-purple;
         border: none;
         border-radius: 1px;
         color: $white;

@@ -1,37 +1,57 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
-// import { NavLink } from 'react-router-dom';
-
-// export const NavItem = (props) => {
-//   return (
-//     <li>
-//       <NavLink className={ props.className } onClick={ props.onClick } to={ `#${props.to}` }>{ props.title }</NavLink>
-//     </li>
-//   );
-// };
+import { slide as Menu } from 'react-burger-menu'
 
 class Navigation extends React.Component {
 
   constructor(props, context) {
     super(props, context);
     this._getItems = this._getItems.bind(this);
-    // this.handleScroll = this.handleScroll.bind(this);
+    this.state = {
+      width: window.innerWidth,
+    };
   }
 
+  showSettings (event) {
+   event.preventDefault();
+ }
+
+
+  componentWillMount() {
+    window.addEventListener('resize', this.handleWindowSizeChange);
+  }
+
+  // make sure to remove the listener
+  // when the component is not mounted anymore
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleWindowSizeChange);
+  }
+
+  handleWindowSizeChange = () => {
+    this.setState({ width: window.innerWidth });
+  };
+
   render() {
-    return(
+
+    const { width } = this.state;
+    const isMobile = width <= 767;
+
+    if (isMobile) {
+      return(
+        <Menu className="mobile" width={ '60%' }>
+          <ul>
+            { this._getItems() }
+          </ul>
+        </Menu>
+      );
+    }
+    else { return(
       <nav>
         <ul>
           { this._getItems() }
-          {/* <li><a href="#about">About Us</a></li>
-          <li><a href="#details">Event Details</a></li>
-          <li><a href="#rsvp">R.S.V.P.</a></li>
-          <li><a href="#todo">Stay Busy</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#registry">Registry</a></li> */}
         </ul>
       </nav>
     );
+    }
   }
 
 
@@ -64,7 +84,7 @@ class Navigation extends React.Component {
     ];
 
     let mapItems = li.map(item => {
-      return (<li key={ item.id }> <a href={ item.href }>{ item.title }</a></li>
+      return (<li key={ item.id } className="menu-item"> <a href={ item.href } onClick={ this.showSettings }>{ item.title }</a></li>
         );
       }
     );

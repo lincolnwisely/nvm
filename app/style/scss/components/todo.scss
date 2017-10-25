@@ -58,8 +58,8 @@
           }
       }
       a {
-        background-color: $neutral-color-4;
-        color: $purple-2;
+        background-color: $dark-purple;
+        color: $white;
         font-weight: 300;
         font-size: rem(16px, 16px);
         margin: 10px auto 0;
@@ -74,7 +74,6 @@
 
           &:hover {
           background-color: $neutral-color-5;
-          color: $neutral-color-4;
           @include transition(all .3s ease, color .3s ease);
         }
       }

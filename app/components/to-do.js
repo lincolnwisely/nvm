@@ -25,28 +25,32 @@ class ToDo extends React.Component {
         image: 'app/images/city-museum.jpg',
         name: 'City Museum',
         description: "City Museum is a favorite destination of both brides - from the meticulous murals to the eerie caves. Insider's tip: rooftop access is worth the extra $. Also, wear comfortable shoes.",
-        link: 'http://www.citymuseum.org/'
+        link: 'http://www.citymuseum.org/',
+        cta: 'Be a kid again'
       },
       {
         id: 1,
         image: 'app/images/arch.jpg',
         name: 'Gateway Arch',
         description: 'Towering at 630 feet, the Arch is 2.5x taller than the Statue of Liberty! See where it all began for Lewis and Clark, even if you opt out of the quirky ride to the top.',
-        link: 'http://www.gatewayarch.com/'
+        link: 'http://www.gatewayarch.com/',
+        cta: 'Look, it\'s the arch!'
       },
       {
         id: 2,
         image: 'app/images/south-grand.jpg',
         name: 'South Grand',
         description: 'We may be biased, but this cozy strip of diverse restaurants and shops is worth checking out! Recommendations: Pho Grand, Basil Spice, The Vine, Rooster. Just a block from Tower Grove Park.',
-        link: 'http://southgrand.org/'
+        link: 'http://southgrand.org/',
+        cta: 'Ain\'t it grand'
       },
       {
         id: 3,
         image: 'app/images/forestpark.jpg',
         name: 'Forest Park',
         description: "Home to STL Art Museum, Zoo, History Museum, and more - not to mention the lush flora and fauna that inhabit its 1,293 acres – Forest Park is one of the city's greatest treasures.",
-        link: 'https://www.stlouis-mo.gov/government/departments/parks/parks/Forest-Park.cfm'
+        link: 'https://www.stlouis-mo.gov/government/departments/parks/parks/Forest-Park.cfm',
+        cta: 'Forest Park 4 Ever'
 
       },
       {
@@ -54,7 +58,8 @@ class ToDo extends React.Component {
         image: 'app/images/budweiser.jpg',
         name: 'Anheuser-Busch Brewery',
         description: "Might as well tour one of the country's oldest and largest breweries. The complimentary pint at the end of the free tour is worth its weight in gold.",
-        link: 'http://www.budweisertours.com/'
+        link: 'http://www.budweisertours.com/',
+        cta: 'Hops are calling'
 
       },
       {
@@ -62,7 +67,8 @@ class ToDo extends React.Component {
         image: 'app/images/soulard.jpg',
         name: 'Soulard',
         description: "Charming cobblestone roads and courtyards adorn St. Louis's oldest neighborhood, Soulard. Visit the Farmer's Market or drop into one of its many bars to engage in Soulard's fav pastime - drinking.",
-        link: 'http://www.soulard.org/'
+        link: 'http://www.soulard.org/',
+        cta: 'Bar crawl, anyone?'
 
       },
 
@@ -71,7 +77,8 @@ class ToDo extends React.Component {
         image: 'app/images/zoo.jpg',
         name: 'St. Louis Zoo',
         description: 'Say hi to the animals. The St. Louis zoo is one of the best in the country - and admission is free! Check out the new Grizzly Ridge exhibit.',
-        link: 'https://www.stlzoo.org/'
+        link: 'https://www.stlzoo.org/',
+        cta: 'Get wild'
 
       },
       {
@@ -79,7 +86,8 @@ class ToDo extends React.Component {
         image: 'app/images/cwe.jpg',
         name: 'Central West End',
         description: "This trendy neighborhood has great restaurants and bars. Prob the most 'New York' part of STL. Go to Dressel's for dinner, Brasserie for brunch, Taste for cocktails.",
-        link: 'https://cwescene.com/'
+        link: 'https://cwescene.com/',
+        cta: 'This Way to Yuppietown'
 
       },
       {
@@ -87,7 +95,8 @@ class ToDo extends React.Component {
         image: 'app/images/grove.jpg',
         name: 'The Grove',
         description: 'St. Louis\'s gay-borhood features yummy eats, cute shops and vibrant nightlife. Spots to hit: Just John, Handlebar, Attitudes, Rehab. Tower Classic Tattoo for new ink. (Why not?)',
-        link: 'http://thegrovestl.com/contact/'
+        link: 'http://thegrovestl.com/contact/',
+        cta: 'Shake your Grove thing'
 
       },
       {
@@ -95,7 +104,8 @@ class ToDo extends React.Component {
         image: 'app/images/cam.jpg',
         name: 'Contemporary Art Museum',
         description: "CAM's bizarre, imaginitive and ludacris rotation of exhibits makes it an intriguing destination. Cool spots nearby: The Fountain on Locust, Small Batch.",
-        link: 'http://camstl.org/'
+        link: 'http://camstl.org/',
+        cta: 'Artsy Fartsy Fun'
 
       },
       {
@@ -103,7 +113,8 @@ class ToDo extends React.Component {
         image: 'app/images/delmar.jpg',
         name: 'Delmar Loop',
         description: "Pin-Up Bowl, Vintage Vinyl, The Trolley (if it's working)... with the right attitude, The Loop is a lot of fun. And it's pretty close to the venue.",
-        link: 'https://visittheloop.com/'
+        link: 'https://visittheloop.com/',
+        cta: 'Get in the Loop'
 
       },
       {
@@ -111,13 +122,14 @@ class ToDo extends React.Component {
         image: 'app/images/cherokee.jpg',
         name: 'Cherokee Street',
         description: 'Take your pick on this fun stretch of diverse shops: Antique Row for goods, Taqueria El Bronco for grub, Fortune Teller Bar for cocktails, Flowers and Weeds for pure joy.',
-        link: 'http://cherokeestreetnews.org/'
+        link: 'http://cherokeestreetnews.org/',
+        cta: 'Weird and Wonderful Cherokee'
 
       }
     ];
 
     let mapPlaces = places.map(item => {
-      return (<Place key={ item.id } name={ item.name } image={ item.image } description={ item.description } link={ item.link } />
+      return (<Place key={ item.id } name={ item.name } image={ item.image } description={ item.description } link={ item.link } cta={ item.cta }/>
         );
       }
     );
