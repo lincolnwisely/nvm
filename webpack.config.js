@@ -53,7 +53,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, "build"),
-    publicPath: '/',
+    publicPath: '/build/',
     filename: 'transformed.js'
   },
   // plugins: [HTMLWebpackPluginConfig]
