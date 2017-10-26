@@ -7,8 +7,10 @@ nav {
   @include bp(sm) {
     position:fixed;
     top: 0;
-    background-color: transparent;
+    background-color: black;
     z-index: 1;
+    height: 80px;
+    opacity: .85;
   }
   ul {
     display: flex;
@@ -113,5 +115,5 @@ nav {
   /* Styling of overlay */
   .bm-overlay {
     background: rgba(0, 0, 0, 0.3);
-  }  
+  }
 }

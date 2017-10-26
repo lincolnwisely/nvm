@@ -37,11 +37,13 @@ class Navigation extends React.Component {
 
     if (isMobile) {
       return(
-        <Menu className="mobile" width={ '60%' }>
-          <ul>
-            { this._getItems() }
-          </ul>
-        </Menu>
+        <div className="backer">
+          <Menu className="mobile" width={ '60%' }>
+            <ul>
+              { this._getItems() }
+            </ul>
+          </Menu>
+        </div>
       );
     }
     else { return(

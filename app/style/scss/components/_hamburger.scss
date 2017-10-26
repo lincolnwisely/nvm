@@ -1,0 +1,31 @@
+.backer {
+    height: 70px;
+    position: fixed;
+    z-index: 101;
+    background-color: $dark-purple;
+    opacity: .95;
+    width: 100%;
+
+    .bm-burger-button {
+      position: fixed;
+      width: 36px;
+      height: 30px;
+      left: 20px;
+      top: 20px;
+      background-color: transparent;
+    }
+
+    .bm-burger-bars {
+      background: $white;
+    }
+
+    .mobile .bm-menu {
+      background: $dark-purple !important;
+      padding: 2.5em 1.5em 0;
+      font-size: 1.15em;
+
+      nav {
+        background-color: $dark-purple;
+      }
+    }
+}

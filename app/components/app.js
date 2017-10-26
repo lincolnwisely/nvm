@@ -17,11 +17,11 @@ class App extends React.Component {
     return(
       // <div id="outer-container">
         <div className="wrapper">
+          <Navigation className="test" />
           <div className="hero">
             <h1>Webber-Wisely</h1>
             <p>---- March 30th, 2018 ----</p>
           </div>
-          <Navigation pageWrapId={ "page-wrap" } className="test" />
           <Welcome />
           <Details />
           <Form />
