@@ -1,4 +1,5 @@
 import React from 'react';
+import firebase from '../firebase.js';
 
 
 class Reservation extends React.Component {
@@ -9,7 +10,7 @@ class Reservation extends React.Component {
       isGoing: true,
       numberOfGuests: 2,
       facebookEvent: true,
-      note: ''
+      note: '',
     }
 
     this.handleInputChange = this.handleInputChange.bind(this);
@@ -24,7 +25,6 @@ class Reservation extends React.Component {
     this.setState({
       [name]: value
     });
-
   }
 
   handleRadioChange(event) {
@@ -33,46 +33,32 @@ class Reservation extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
-
-    // const data = new FormData(this.state); // doesn't work...
-//this.state will return an object of the form's state - e.g. data.
-// need to send this object to a URL
-
-    alert('A name has been submitted: ' + this.state.fullName +"AND Is going: " + this.state.isGoing + " AND total guests:" + this.state.numberOfGuests + "AND wants fb invite?: " + this.state.facebookEvent);
+    // alert('A name has been submitted: ' + this.state.fullName +"AND Is going: " + this.state.isGoing + " AND total guests:" + this.state.numberOfGuests + "AND wants fb invite?: " + this.state.facebookEvent);
     let form = document.getElementById("gform");
-    // const data = {};
-    // const url = 'https://docs.google.com/spreadsheets/d/1uLsm7hRUb2ZAR8DoiBNz4UbnXoJlg7lS1WftXC1E2hQ/edit#gid=0';
+
     const thanks = document.getElementById("thanks");
-// serializeObject() is not a function
     console.log(this.state);
     console.log(form + ' form');
-    // console.log(data + ' data');
 
     form.style.display = 'none';
     thanks.style.display = 'block';
 
-  // from https://stvmlbrn.github.io/2017/04/07/submitting-form-data-with-react.html
-  // get our form data out of state
-    //  const { fullName, isGoing, numberOfGuests, note } = this.state;
-     //
-    //  axios.post('/', { fullName, isGoing, numberOfGuests, note })
-    //    .then((result) => {
-      //    //access the results here....
-      //  });
-
-//new url https://script.google.com/macros/s/AKfycbxam9lV6hXiRU84F8DxILj3mJ0qgFs8gpkuGSPjwnDoFsD0hS4/exec
-
-
-    // var url = 'https://script.google.com/macros/s/AKfycbx8ZWCyYjZnz8Ic0FzXXs0BMknchW0L3hwMinWPNIvOiaJLww/exec';
-    //
-    // var jqxhr = $.ajax({
-    //     url: url,
-    //     method: "GET",
-    //     dataType: "json",
-    //     data: form.serializeObject()
-    //   }).success(
-    //     // do something
-    //   );
+    const itemsRef = firebase.database().ref('items');
+    const item = {
+      name: this.state.fullName,
+      isGoing: this.state.isGoing,
+      number: this.state.numberOfGuests,
+      facebookEvent: this.state.facebookEvent,
+      note: this.state.note
+    }
+    itemsRef.push(item);
+    this.setState({
+      fullName: '',
+      isGoing: true,
+      numberOfGuests: 2,
+      facebookEvent: true,
+      note: '',
+    });
   }
 
   render() {
@@ -164,7 +150,7 @@ class Thanks extends React.Component {
 class Form extends React.Component {
   render() {
     return(
-      <div className="form-container" id="rsvp">
+      <div className="form-container container" id="rsvp">
         <h2>R.S.V.P</h2>
         <Reservation />
         <Thanks />
