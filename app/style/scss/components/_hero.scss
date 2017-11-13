@@ -3,25 +3,36 @@
                      rgba(189, 58, 255, .1),
                      rgba(189, 58, 255, .05)),
                      url('/app/images/green-hero.jpg') no-repeat center center fixed;
-  height: 420px;
+  height: 400px;
   position: relative;
-  width:100%;
+  width:90%;
+  margin: 0 auto;
   text-align: center;
+}
 
-  h1 {
-  color: $neutral-color-4;
-  padding-top: rem(120px, 16px);
-  text-shadow: $text-shadow;
+.heading {
+  width: 90%;
+  margin: 30px auto 0;
+  padding-top: 80px;
+  padding-bottom: 30px;
 
-    @include bp(sm) {
-      padding-top: rem(160px, 16px);
-    }
+  @include bp(sm) {
+    padding: 20px 0;
   }
 
+  h1 {
+  color: $dark-purple;
+  padding-top: em(46px, 32px);
+  text-transform: uppercase;
+  font-size: 42px;
+    @include bp(sm) {
+      font-size: 48px;
+    }
+  }
   p {
-    color: $neutral-color-4;
+    color: $dark-purple;
     font-weight: 300;
-    margin-top: rem(16px, 16px);
-    letter-spacing: .25em;
+    letter-spacing: .2em;
+    margin: 10px 0 10px 5px;
   }
 }

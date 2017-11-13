@@ -1,9 +1,11 @@
-footer {
+footer.container {
+  padding-bottom:10px;
+  padding-top: 0;
   p {
-    color: $neutral-color-2;
+    color: $neutral-color-4;
     text-align: center;
     a {
-       color: $neutral-color-2;
+       color: $neutral-color-4;
     }
   }
 }

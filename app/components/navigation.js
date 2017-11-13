@@ -65,7 +65,7 @@ class Navigation extends React.Component {
       },
       { id: 1,
         href: '#details',
-        title: 'Event Details'
+        title: 'Details'
       },
       { id: 2,
         href: '#rsvp',

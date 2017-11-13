@@ -1,8 +1,6 @@
 #registry {
-  background-color: white;
 
   h2 {
-    text-align: center;
     margin-bottom: rem(60px, 16px);
   }
 
@@ -13,7 +11,7 @@
 
     @include bp(sm) {
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: space-between;
     }
 
     a {
@@ -23,7 +21,7 @@
         height: 100px;
 
         @include bp(sm) {
-          height: 130px;
+          height: 110px;
         }
       }
 

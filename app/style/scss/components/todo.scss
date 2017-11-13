@@ -2,15 +2,22 @@
   text-align: center;
   max-width: $max-width;
   margin: 40px auto;
+
   @include clearfix;
 
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
   h2 {
-    margin-left: auto;
-    margin-right: auto;
+    text-align: left;
     margin-bottom: rem(42px, 16px);
-    width: 95%;
+    flex: 1 100%;
+
     @include bp(sm) {
-      width:90%;
       margin-bottom: em(21px, 16px);
       }
     }
@@ -18,30 +25,38 @@
     @include clearfix;
     float:left;
     margin-bottom: 30px;
-
     a {
       font-size: 0;
 
       img {
         border-style: none;
-        width: 89.5%;
+        width: 100%;
         height: auto;
+        border: 2px solid $dark-purple;
+        border-bottom: none;
+
+        @include bp(sm) {
+          width: 90%;
+        }
       }
     }
 
     .block {
-      background-color: $neutral-color-4;
-      border: 1px solid $neutral-color-3;
+
       margin: -6px auto 0;
-      width: 90%;
+      width: 100%;
       display: flex;
       flex-direction: column;
       height: auto;
       justify-content: space-between;
+      border: 2px solid $dark-purple;
+      border-top: none;
 
       @include bp(sm) {
         height: rem(230px, 16px);
         padding-top: 10px;
+        width: 90%;
+
       }
 
       h3 {
@@ -49,7 +64,6 @@
         font-size: rem(21px, 16px);
       }
       p {
-        background-color: $neutral-color-4;
         margin: 10px auto 0px;
         width:90%;
         @include bp(sm) {
@@ -59,6 +73,7 @@
       }
       a {
         background-color: $dark-purple;
+        border-top: 2px solid black;
         color: $white;
         font-weight: 300;
         font-size: rem(16px, 16px);
@@ -67,22 +82,24 @@
         text-decoration: none;
         text-transform: uppercase;
         width: 100%;
+        font-family: $primary-font-regular;
+        @include transition(all .5s ease);
 
         @include bp(sm) {
           margin: 0 auto;
         }
 
           &:hover {
-          background-color: $neutral-color-5;
-          @include transition(all .3s ease, color .3s ease);
+          background-color: $green;
         }
       }
     }
-  @include bp(sm) {
-    width:50%;
+    @include bp(sm) {
+      width:50%;
+      margin-left: -15px;
     }
-  @include bp(lg) {
-    width:33.3%;
+    @include bp(lg) {
+      width:33.3%;
     }
   }
 }

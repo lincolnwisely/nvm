@@ -1,16 +1,36 @@
 .lodging {
-  background-color: $white;
 
-  h2 {
-    text-align: center;
-  }
+   p {
+     margin-top: 5px;
+   }
+
 
   .box {
-    width: 90%;
-    margin: 0 auto;
+    display:block;
+    margin: 30px auto;
 
-     p {
-       margin-top: 5px;
-     }
+    @include bp(sm) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    h3 a {
+      color: $dark-purple;
+      text-align: left;
+      font-family: $secondary-font;
+      font-size: 22px;
+      font-weight:900;
+    }
+
+    p {
+    text-align: left;
+    margin: 0;
+    line-height: 1.7;
+
+    @include bp(sm) {
+      width: 50%;
+      }
+    }
   }
 }
