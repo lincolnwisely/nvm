@@ -86,7 +86,7 @@ class Navigation extends React.Component {
     ];
 
     let mapItems = li.map(item => {
-      return (<li key={ item.id } className="menu-item"> <a href={ item.href } onClick={ this.showSettings }>{ item.title }</a></li>
+      return (<li key={ item.id } className="menu-item"> <a href={ item.href }>{ item.title }</a></li>
         );
       }
     );

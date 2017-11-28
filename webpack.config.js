@@ -15,20 +15,9 @@ const plugins = [
   })
 ];
 
-
-function getEntrySources(sources) {
-    if (process.env.NODE_ENV !== 'production') {
-        sources.push('webpack-dev-server/client?http://localhost:8080');
-    }
-    return sources;
-}
-
 module.exports = {
-  entry: [
-    'webpack-dev-server/client?http://localhost:8080',
-    'webpack/hot/only-dev-server',
-    './app/index.js'
-  ],
+  entry: __dirname + '/app/index.js',
+
   devtool: 'source-map',
   module: {
     loaders: [
@@ -39,7 +28,6 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        // loader: extractTextPlugin.extract('css-loader!sass-loader!style-loader')
         use: extractTextPlugin.extract({
           use: [{
             loader: 'css-loader'
@@ -52,10 +40,9 @@ module.exports = {
     ]
   },
   output: {
-    path: path.resolve(__dirname, "build"),
-    publicPath: '/build/',
+    path: __dirname + '/build',
+    publicPath: '/',
     filename: 'transformed.js'
   },
-  // plugins: [HTMLWebpackPluginConfig]
   plugins
 };

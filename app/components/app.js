@@ -1,6 +1,7 @@
 import React from 'react';
 import Navigation from './navigation.js';
 import Welcome from './welcome.js';
+import About from './about.js';
 import Details from './details.js';
 import Form from './form.js';
 import Lodging from './lodging.js';
@@ -14,14 +15,17 @@ class App extends React.Component {
   render()  {
     return(
         <div className="wrapper">
-          <Navigation className="test" />
-          <div className="heading">
-            <h1>Webber-Wisely</h1>
-            <p>Friday, March 30th, 2018</p>
-          </div>
-          <div className="hero">
+          <div className="nav-hero">
+            <Navigation className="test" />
+            <div className="heading">
+              <h1>Webber-Wisely</h1>
+              <p>Friday, March 30th, 2018</p>
+            </div>
+            <div className="hero">
+            </div>
           </div>
           <Welcome />
+          <About />
           <Details />
           <Form />
           <Lodging />
