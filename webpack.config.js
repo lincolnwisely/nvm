@@ -10,7 +10,7 @@ const plugins = [
     inject: 'body'
   }),
   new extractTextPlugin({
-    filename: '/style/style.css',
+    filename: 'style/style.css',
     allChunks: true
   })
 ];
@@ -41,7 +41,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname + '/build'),
-    publicPath: '/build',
+    publicPath: '',
     filename: 'transformed.js'
   },
   plugins
