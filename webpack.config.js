@@ -10,7 +10,7 @@ const plugins = [
     inject: 'body'
   }),
   new extractTextPlugin({
-    filename: 'style/style.css',
+    filename: 'style.css',
     allChunks: true
   })
 ];

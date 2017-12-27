@@ -142,6 +142,10 @@ class Thanks extends React.Component {
     return(
       <div id="thanks">
         <h4>Thank you for your response!</h4>
+        <h4>Thank you for your response!</h4>
+        <h4>Thank you for your response!</h4>
+        <h4>Thank you for your response!</h4>
+        <h4>Thank you for your response!</h4>
       </div>
     );
   }

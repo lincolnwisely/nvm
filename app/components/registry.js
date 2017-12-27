@@ -7,7 +7,7 @@ class Registry extends React.Component {
         <div className="container">
           <h2>Registry</h2>
           <div className="items">
-            <a href="https://www.target.com/gift-registry/giftwebberwisely" target="_blank"><img src="app/images/target.png" /></a>
+            <a href="https://www.target.com/gift-registry/gift/webberwisely" target="_blank"><img src="app/images/target.png" /></a>
             <a href="https://www.amazon.com/wedding/arin-webber-lincoln-wisely-st-louis-march-2018/registry/2E74W8MB3KDEY" target="_blank"><img src="app/images/amazon.png" /></a>
             <a href="https://www.cb2.com/gift-registry/lincoln-wisely-and-arin-webber/r5699234" target="_blank"><img src="app/images/cb2.png" /></a>
           </div>
